@@ -17,7 +17,7 @@ body {
     background-position: center;
     background-size: cover;
     height: 100vh;
-background-attachment: fixed;
+    background-attachment: fixed;
 }
 
 #about-section {
@@ -36,7 +36,7 @@ background-attachment: fixed;
     background-attachment: fixed;
 }
 
-#whyUs-section h6::after, #menu-section h6::after, #special-section h6::after, #reserve-section h6::after, #event-section h6::after, #testimony-section h6::after, #gallery-section h6::after, #chefs-section h6::after {
+#whyUs-section h6::after, #menu-section h6::after, #special-section h6::after, #reserve-section h6::after, #event-section h6::after, #testimony-section h6::after, #gallery-section h6::after, #chefs-section h6::after, #contact-section h6::after {
     content: "";
     width: 120px;
     height: 1px;
@@ -45,13 +45,13 @@ background-attachment: fixed;
     margin: 4px 10px;
 }
 
-#reserve-section input, textarea {
+#reserve-section input, textarea, #contact-section input, textarea, #footer-section input {
     background-color: transparent !important;
     border-color: rgba(255, 255, 255, 0.3) !important;
     color: #cda45e !important;
 }
 
-#reserve-section input::placeholder {
+#reserve-section input::placeholder, #contact-section input::placeholder {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -93,12 +93,8 @@ background-attachment: fixed;
     border: 2px solid #cda45e !important;
 }
 
-.btn-outline-warning:hover {
-    background-color: #cda45e;
-}
-
-.bullet-hover:hover {
-    color: #cda45e !important;
+.btn-outline-warning:hover, #footer-section .link-hover a:hover, #whyUs-section .card-body:hover {
+    background-color: #cda45e !important;
 }
 
 .table-btn {
@@ -111,8 +107,12 @@ background-attachment: fixed;
     color: #cda45e !important;
 }
 
-#chefs-section .to-block:hover  {
-    display: block !important;
+#whyUs-section .card-body:hover h5, .card-body:hover p {
+    color: #fff !important;
+}
+
+.img-hover:hover .d-none {
+    display: block;
 }
 
 /* Back to top link */
