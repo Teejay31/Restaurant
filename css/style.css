@@ -26,6 +26,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    object-fit: cover;
 }
 
 .event-bg {
@@ -151,6 +152,7 @@ body {
 @media (max-width: 426px) {
     #header-section {
         height: 70vh;
+        object-fit: cover;
     }
 
     .header-rem {
